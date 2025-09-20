@@ -1,4 +1,4 @@
-package com.example.java;
+package com.example.projetoquiz;
 
 import android.os.Bundle;
 import android.view.View;

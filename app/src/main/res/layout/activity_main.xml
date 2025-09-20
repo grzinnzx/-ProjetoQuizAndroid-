@@ -3,6 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
+    android:background="@drawable/gradiant"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
@@ -13,7 +14,6 @@ android:layout_height="268dp"
 android:layout_marginStart="20dp"
 android:layout_marginTop="50dp"
 android:layout_marginEnd="20dp"
-android:background="@color/red_1"
 android:gravity="center"
 app:layout_constraintBottom_toBottomOf="parent"
 app:layout_constraintEnd_toEndOf="parent"
@@ -27,7 +27,8 @@ app:layout_constraintVertical_bias="0.499">
     android:layout_width="350dp"
     android:layout_height="wrap_content"
     android:layout_marginBottom="10dp"
-    android:background="@color/red_2"
+    android:background="@drawable/botao1"
+    android:textColor="@color/black"
     android:text="" />
 
 <RadioButton
@@ -35,7 +36,8 @@ app:layout_constraintVertical_bias="0.499">
     android:layout_width="350dp"
     android:layout_height="wrap_content"
     android:layout_marginBottom="10dp"
-    android:background="@color/red_3"
+    android:background="@drawable/botao1"
+    android:textColor="@color/black"
     android:text="" />
 
 <RadioButton
@@ -43,29 +45,33 @@ app:layout_constraintVertical_bias="0.499">
     android:layout_width="350dp"
     android:layout_height="wrap_content"
     android:layout_marginBottom="10dp"
-    android:background="@color/red_4"
+    android:background="@drawable/botao1"
     android:text="" />
 
 <RadioButton
     android:id="@+id/rbD"
     android:layout_width="350dp"
     android:layout_height="wrap_content"
-    android:background="@color/red_5"
+    android:background="@drawable/botao1"
+    android:textColor="@color/black"
     android:gravity="center"
     android:text="" />
 </RadioGroup>
 
-<Button
-android:id="@+id/btnResponder"
-android:layout_width="301dp"
-android:layout_height="55dp"
-android:text="Responder"
-app:layout_constraintBottom_toBottomOf="parent"
-app:layout_constraintEnd_toEndOf="parent"
-app:layout_constraintStart_toStartOf="parent"
-app:layout_constraintTop_toBottomOf="@+id/rdgPrincipal" />
+    <Button
+        android:id="@+id/btnResponder"
+        android:layout_width="301dp"
+        android:layout_height="55dp"
+        android:background="@drawable/botao2"
+        android:text="Responder"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@+id/rdgPrincipal"
+        app:layout_constraintVertical_bias="0.335" />
 
-<TextView
+    <TextView
 android:id="@+id/txvResultado"
 android:layout_width="wrap_content"
 android:layout_height="wrap_content"
@@ -93,7 +99,9 @@ android:layout_width="wrap_content"
 android:layout_height="wrap_content"
 android:layout_marginBottom="16dp"
 android:text="Button"
-app:layout_constraintBottom_toBottomOf="parent"
+    android:background="@drawable/botao2"
+
+    app:layout_constraintBottom_toBottomOf="parent"
 app:layout_constraintEnd_toEndOf="parent"
 app:layout_constraintHorizontal_bias="0.498"
 app:layout_constraintStart_toStartOf="parent" />
